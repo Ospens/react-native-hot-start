@@ -3,12 +3,12 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '10.0'
 
-target 'TheBestAlias' do
+target 'ReactNativeHotStart' do
   config = use_native_modules!
 
   use_react_native!(:path => config["reactNativePath"])
 
-  target 'TheBestAliasTests' do
+  target 'ReactNativeHotStartTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -23,10 +23,10 @@ target 'TheBestAlias' do
   end
 end
 
-target 'TheBestAlias-tvOS' do
-  # Pods for TheBestAlias-tvOS
+target 'ReactNativeHotStart-tvOS' do
+  # Pods for ReactNativeHotStart-tvOS
 
-  target 'TheBestAlias-tvOSTests' do
+  target 'ReactNativeHotStart-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

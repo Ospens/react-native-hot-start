@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "TheBestAlias.app"
-               BlueprintName = "TheBestAlias"
-               ReferencedContainer = "container:TheBestAlias.xcodeproj">
+               BuildableName = "ReactNativeHotStart.app"
+               BlueprintName = "ReactNativeHotStart"
+               ReferencedContainer = "container:ReactNativeHotStart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "TheBestAliasTests.xctest"
-               BlueprintName = "TheBestAliasTests"
-               ReferencedContainer = "container:TheBestAlias.xcodeproj">
+               BuildableName = "ReactNativeHotStartTests.xctest"
+               BlueprintName = "ReactNativeHotStartTests"
+               ReferencedContainer = "container:ReactNativeHotStart.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "TheBestAlias.app"
-            BlueprintName = "TheBestAlias"
-            ReferencedContainer = "container:TheBestAlias.xcodeproj">
+            BuildableName = "ReactNativeHotStart.app"
+            BlueprintName = "ReactNativeHotStart"
+            ReferencedContainer = "container:ReactNativeHotStart.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "TheBestAlias.app"
-            BlueprintName = "TheBestAlias"
-            ReferencedContainer = "container:TheBestAlias.xcodeproj">
+            BuildableName = "ReactNativeHotStart.app"
+            BlueprintName = "ReactNativeHotStart"
+            ReferencedContainer = "container:ReactNativeHotStart.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
