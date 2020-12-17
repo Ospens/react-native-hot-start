@@ -1,17 +1,12 @@
+import "react-native-gesture-handler";
 import React from "react";
-import { SafeAreaView, ScrollView, View, Text, StatusBar } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import Routing from "./src/routing";
 
 const App = () => (
-  <>
-    <StatusBar barStyle="dark-content" />
-    <SafeAreaView>
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View>
-          <Text>React Native Hot Start</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  </>
+  <NavigationContainer>
+    <Routing />
+  </NavigationContainer>
 );
 
 export default App;
