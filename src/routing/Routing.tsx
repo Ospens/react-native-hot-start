@@ -9,8 +9,16 @@ const Stack = createStackNavigator<RootStackParamList>();
 const Routing = memo(() => {
   return (
     <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Another" component={AnotherScreen} />
+      <Stack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{ title: "My home" }}
+      />
+      <Stack.Screen
+        name="Another"
+        component={AnotherScreen}
+        options={({ route }) => ({ title: route.params.someParam })}
+      />
     </Stack.Navigator>
   );
 });
