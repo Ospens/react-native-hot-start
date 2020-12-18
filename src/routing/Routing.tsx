@@ -6,21 +6,19 @@ import { RootStackParamList } from "./Routing.types";
 
 const Stack = createStackNavigator<RootStackParamList>();
 
-const Routing = memo(() => {
-  return (
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{ title: "My home" }}
-      />
-      <Stack.Screen
-        name="Another"
-        component={AnotherScreen}
-        options={({ route }) => ({ title: route.params.someParam })}
-      />
-    </Stack.Navigator>
-  );
-});
+const Routing = memo(() => (
+  <Stack.Navigator initialRouteName="Home">
+    <Stack.Screen
+      name="Home"
+      component={HomeScreen}
+      options={{ title: "My home" }}
+    />
+    <Stack.Screen
+      name="Another"
+      component={AnotherScreen}
+      options={({ route }) => ({ title: route.params.someParam })}
+    />
+  </Stack.Navigator>
+));
 
 export default Routing;
