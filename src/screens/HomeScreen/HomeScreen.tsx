@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
 import { observer } from "mobx-react-lite";
+import { useStore } from "stores";
 import { HomeScreenProps } from "./HomeScreen.types";
 import styles from "./HomeScreen.styles";
-import { useStore } from "../../stores";
 
 const HomeScreen = observer(({ navigation }: HomeScreenProps) => {
   const rootStore = useStore("rootStore");
