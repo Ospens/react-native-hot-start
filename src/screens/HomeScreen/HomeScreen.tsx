@@ -2,10 +2,10 @@ import React from "react";
 import { View, Text, Button } from "react-native";
 import { observer } from "mobx-react-lite";
 import { useStore } from "stores";
-import { HomeScreenProps } from "./HomeScreen.types";
+import { IHomeScreenNavigationProps } from "routing/Routing.types";
 import styles from "./HomeScreen.styles";
 
-const HomeScreen = observer(({ navigation }: HomeScreenProps) => {
+const HomeScreen = observer(({ navigation }: IHomeScreenNavigationProps) => {
   const rootStore = useStore("rootStore");
 
   return (
@@ -16,7 +16,8 @@ const HomeScreen = observer(({ navigation }: HomeScreenProps) => {
         onPress={() =>
           navigation.navigate("Another", {
             someParam: "latest",
-          })}
+          })
+        }
       />
       <Button title="double" onPress={() => rootStore.increment()} />
       <Button title="reassign" onPress={() => rootStore.reassign()} />

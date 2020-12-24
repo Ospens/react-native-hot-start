@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "start-reset-cache": "rm -rf /tmp/metro-* && react-native start --reset-cache",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-auto-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
@@ -32,6 +34,7 @@
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.11.0",
     "babel-jest": "^26.6.3",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-import-resolver-typescript": "^2.3.0",

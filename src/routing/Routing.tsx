@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import HomeScreen from "../screens/HomeScreen";
-import AnotherScreen from "../screens/AnotherScreen";
+import HomeScreen from "screens/HomeScreen";
+import AnotherScreen from "screens/AnotherScreen";
 import { RootStackParamList } from "./Routing.types";
 
 const Stack = createStackNavigator<RootStackParamList>();
