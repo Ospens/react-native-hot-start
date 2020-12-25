@@ -2,10 +2,10 @@ import React from "react";
 import { View, Text, Button } from "react-native";
 import { observer } from "mobx-react-lite";
 import { useStore } from "stores";
-import { IHomeScreenNavigationProps } from "routing/Routing.types";
+import type { INavigatorProps } from "routing";
 import styles from "./HomeScreen.styles";
 
-const HomeScreen = observer(({ navigation }: IHomeScreenNavigationProps) => {
+const HomeScreen = observer(({ navigation }: INavigatorProps<"Home">) => {
   const rootStore = useStore("rootStore");
 
   return (

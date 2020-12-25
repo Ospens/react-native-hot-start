@@ -1,5 +1,5 @@
 import { makeAutoObservable } from "mobx";
-import type RootStore from "../Root.store";
+import type RootStore from "../RootStore/Root.store";
 
 class UiStore {
   public rootStore: RootStore;

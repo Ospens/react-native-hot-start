@@ -1,5 +1,5 @@
 import { observable, makeAutoObservable } from "mobx";
-import UiStore from "./UIStore/UI.store";
+import UiStore from "../UIStore/UI.store";
 
 class RootStore {
   public uiStore: UiStore;

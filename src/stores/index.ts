@@ -1,5 +1,5 @@
 import React from "react";
-import RootStore from "./Root.store";
+import RootStore from "./RootStore/Root.store";
 
 export const stores = Object.freeze({
   rootStore: new RootStore(),

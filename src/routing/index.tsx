@@ -1,5 +1,5 @@
 import Routing from "./Routing";
-import { RootStackParamList } from "./Routing.types";
+import { INavigatorProps } from "./Routing.types";
 
-export type { RootStackParamList };
+export type { INavigatorProps };
 export default Routing;
