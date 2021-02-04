@@ -1,8 +1,8 @@
 import { observable, makeAutoObservable } from "mobx";
-import UiStore from "../UIStore/UI.store";
+import UIStore from "../UIStore/UIStore";
 
 class RootStore {
-  public uiStore: UiStore;
+  public uiStore: UIStore;
 
   public value = 1;
 
@@ -15,7 +15,7 @@ class RootStore {
     makeAutoObservable(this, {
       someObject: observable.struct,
     });
-    this.uiStore = new UiStore(this);
+    this.uiStore = new UIStore(this);
   }
 
   public get double() {
